@@ -237,6 +237,8 @@ def get_resources(project: models.ProjectInfo):
         'Try removing the %s file and restart the scanner.', output_file_name
     )
 
+  cloudshell_client = ClientFactory.get_client('cloudshell').get_service(project.credentials)
+    
   threads_list = list()
   for crawler_name, client_name in CRAWL_CLIENT_MAP.items():
     if is_set(project.scan_config, crawler_name):
