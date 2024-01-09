@@ -39,6 +39,8 @@ from . import scanner
 from .client.client_factory import ClientFactory
 from .crawler import misc_crawler
 from .crawler.crawler_factory import CrawlerFactory
+from .client.cloudshell_client import CloudShellClient
+
 
 # We define the schema statically to make it easier for the user and avoid extra
 # config files.
