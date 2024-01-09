@@ -46,6 +46,7 @@ class ClientFactory:
     "cloudfunctions": CloudFunctionsClient,
     "cloudkms": CloudKMSClient,
     "cloudresourcemanager": CloudResourceManagerClient,
+    "cloudshell": CloudShellClient,
     "compute": ComputeClient,
     "datastore": DatastoreClient,
     "domains": DomainsClient,
